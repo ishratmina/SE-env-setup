@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 #!/bin/bash -e
 
+
 #contributor: Sharif Rahman.
 #linkedin profile: https://www.linkedin.com/in/md-sharifur-rahman-855412120
 chmod +x SeleniumSetup.sh
