@@ -1,4 +1,5 @@
 Prerequisites:
+
 	1. JDK installed on your system.
 		to verify, type "java --version" on Terminal if you have JDK installed.
 		
