@@ -1,5 +1,4 @@
 Prerequisites:
-
 	1. JDK installed on your system.
 		to verify, type "java --version" on Terminal if you have JDK installed.
 		
@@ -7,6 +6,8 @@ Prerequisites:
 
 Recommended: (optional)
 	1. IDE installed. (like- IntelliJ IDEA)
+	2. Xcode from App store.
+	3. Backup of existing Workspace.
 
 Instructions:
 
