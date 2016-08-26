@@ -1,3 +1,14 @@
+About:
+	This script installs or upgrades existing Xcode CLI tools, Homebrew Maven, Jenkins, Jmeter, NPM, Git. Optionally, cleans up your current workspace. Even if you have everything installed, you can still run this script to update Brew and Installed Packages and clean up cached files and/or previous versions of any brew packages. Run the script without any worries and follow the terminal outputs and prompts when asked (all the promts has a timeout for your system's safety).
+
+
+Compatibility: Mac OS X (Unix) and Linux only. Windows OS is NOT supported yet. 
+
+Tests:
+		OS X (10.11.6 El Capitan) tested OK. (Should be OK on OS X 10.5 or newer)
+		Linux (Ubuntu 12.04 LTS, Kernel 3.2.0 or newer) tested OK.
+
+
 Prerequisites:
 	1. JDK installed on your system.
 		to verify, type "java --version" on Terminal if you have JDK installed.
@@ -5,8 +16,8 @@ Prerequisites:
 	2. Sudo or root privilege.
 
 Recommended: (optional)
-	1. IDE installed. (like- IntelliJ IDEA)
-	2. Xcode from App store.
+	1. IDE installed. (like- IntelliJ IDEA or eclipse)
+	2. Xcode from App store. (also can be installed via this script)
 	3. Backup of existing Workspace.
 
 Instructions:
@@ -21,9 +32,9 @@ Instructions:
 	3. On Terminal, type the following command to execute the script
 		"sh SeleniumSetup.sh"
 
-	2. When prompt for y/n questions, answers are case sensative. Only acceptable yes answers are "y" or "yes". Everything else will be taken as no in the script. 
+	2. When prompt for y/n questions, answers are case sensative. Only acceptable yes answers are "y" or "yes". Everything else will be taken as "no" in the script. 
 
-	2. Backup or rename your default workspace in the home directory (if exists).
+	2. Backup or rename your default Workspace in the home directory (if exists).
 
 	3. Recommended to use in Mac OS X for setting up selenium automation environment.
 
