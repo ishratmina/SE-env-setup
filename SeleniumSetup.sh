@@ -14,7 +14,7 @@ function InstallPackages {
 
 		#Installing & Updating Git, Maven, Maven-Shell, NPM, Jenkins and Jmeter.
 		export PATH=/usr/local/bin:$PATH
-		echo "\033[36m>>Git PATH set..\033[0m"
+		echo "\033[36m>>Exported new Git PATH\033[0m"
 		brew install git
 		which mvn || brew install maven
 		which npm && which node || brew install npm
