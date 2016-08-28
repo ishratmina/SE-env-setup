@@ -12,7 +12,7 @@ function InstallPackages {
 		echo "\033[36m>>Brew install/update successful..\033[0m"
 		sleep 2
 
-		#Installing & Updating Git, Maven, NPM, Jenkins and Jmeter.
+		#Installing & Updating Git, Maven, Maven-Shell, NPM, Jenkins and Jmeter.
 		export PATH=/usr/local/bin:$PATH
 		echo "\033[36m>>Git PATH set..\033[0m"
 		brew install git
@@ -20,6 +20,7 @@ function InstallPackages {
 		which npm && which node || brew install npm
 		which jenkins || brew install jenkins
 		which jmeter || brew install jmeter
+		which mvnsh || brew install maven-shell
 		brew upgrade
 		brew cleanup
 		rm -rf ~/Library/Caches/Homebrew/*
@@ -31,20 +32,22 @@ clear
 echo "Do you have latest JDK installed? [y/n] Timeout 8 seconds:"
 read -t 8 conf
 if [ "$conf" == "yes" ] || [ "$conf" == "y" ]; then
-	echo "Info: This script Installs/Upgrades Xcode CL Tools, Homebrew, Git, Maven, Jenkins and Jmeter! \n"
+	echo "Info: This script Installs/Upgrades Xcode CL Tools, Homebrew, Git, Maven, Maven-Shell, Jenkins and Jmeter! \n"
 	echo "\033[33mWARNING: This script may permanently delete contents of your current Workspace!\nPlease enter [y/n] carefully throughout the script!\033[0m"
 	echo "ARE YOU SURE YOU WANT TO CONTINUE? [y/n] Timeout 12 seconds:"
 	read -t 12 msg
 	if [ "$msg" == "yes" ] || [ "$msg" == "y" ]; then
 		echo "Enter the administrator password to continue:"
-		sudo echo "Installing Xcode Command Line Tools.."
+		sudo echo "Detectig Operating System.."
 		
 		#installing xcode command line tools.
 		if [ "$(uname)" == "Darwin" ]; then
 			echo "OS Detected: Darwin (Unix/OS X)"
+			echo "Installing Xcode CommandLineTools.."
 			xcode-select -p || sudo xcode-select --install
 			echo "\033[36m>>Xcode successful..\033[0m"
 			sleep 2
+			
 		#installing brew (for OS X)
 			which brew || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 			sleep 1
@@ -53,6 +56,7 @@ if [ "$conf" == "yes" ] || [ "$conf" == "y" ]; then
 			InstallPackages
 		
 		elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+			echo "Detecting Operating System.."
 			echo "OS Detected: Linux"
 
 			#installing Linuxbrew (for Linux)

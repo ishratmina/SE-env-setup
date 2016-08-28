@@ -1,5 +1,5 @@
 About:
-	This script installs or upgrades existing Xcode CLI tools, Homebrew Maven, Jenkins, Jmeter, NPM, Git. Optionally, cleans up your current workspace. Even if you have everything installed, you can still run this script to update Brew and Installed Packages and clean up cached files and/or previous versions of any brew packages. Run the script without any worries and follow the terminal outputs and prompts when asked (all the promts has a timeout for your system's safety).
+	This script installs or upgrades existing Xcode CLI tools, Homebrew, Maven, Maven-Shell, Jenkins, Jmeter, NPM, Git. Optionally, cleans up your current workspace. Even if you have everything installed, you can still run this script to update Brew and Installed Packages and clean up cached files and/or previous versions of any brew packages. Run the script without any worries and follow the terminal outputs and prompts when asked (all the promts has a timeout for your system's safety).
 
 
 Compatibility: Mac OS X (Unix) and Linux only. Windows OS is NOT supported yet. 
