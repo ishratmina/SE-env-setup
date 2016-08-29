@@ -40,3 +40,9 @@ Instructions:
 	3. Recommended to use in Mac OS X for setting up selenium automation environment.
 
 	4. Script could be used just to upgrade existing installations and cleaning up local Workspace. 
+
+
+For Advance Users:
+	1. Copy the script to your PATH to make the script executable from Terminal. 
+	2. To view $PATH on your system, type echo $PATH. (usually "/usr/bin or /usr/local/bin")
+	3. From Terminal, type SeleniumSetup.sh and the script should be executable directly. 
