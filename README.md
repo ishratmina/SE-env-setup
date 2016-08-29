@@ -21,7 +21,7 @@ Recommended: (optional)
 	2. Xcode from App store. (also can be installed via this script)
 	3. Backup of existing Workspace.
 
-Instructions:
+Instructions: (Beginners)
 
 	1. To execute: Clone/Download the repository on your computer from 
 		https://github.com/sharif314/SE-env-setup.git
@@ -43,6 +43,11 @@ Instructions:
 
 
 For Advance Users:
+
 	1. Copy the script to your PATH to make the script executable from Terminal. 
+
 	2. To view $PATH on your system, type echo $PATH. (usually "/usr/bin or /usr/local/bin")
+
 	3. From Terminal, type SeleniumSetup.sh and the script should be executable directly. 
+
+	4. A better way would be to copy the script on your personalized scripts directory and edit your .bash_profile file to include the above command. That way, it would be done automatically every time you log in.
