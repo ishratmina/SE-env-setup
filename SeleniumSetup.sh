@@ -24,8 +24,10 @@ function InstallPackages {
 		brew upgrade
 		brew cleanup
 		rm -rf ~/Library/Caches/Homebrew/*
+		echo "The following packages installed/updated on your System using brew"
+		brew list
 		echo "\033[36m>>Brew installed/updated all packages to latest versions. Cache cleaned up!\033[0m"
-		sleep 2
+		sleep 1
 	}
 
 clear
