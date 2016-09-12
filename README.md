@@ -16,6 +16,8 @@ Prerequisites:
 		
 	2. Sudo or root privilege.
 
+	3. Highly recommended to install Xcode on Mac OS X prior to execute this script. Although the script does give you option to install xcode, it is NOT recommended to use the script to install xcode. 
+
 Recommended: (optional)
 	1. IDE installed. (like- IntelliJ IDEA or eclipse)
 	2. Xcode from App store. (also can be installed via this script)
