@@ -29,7 +29,7 @@ function UninstallSeleniumPackages {
 function RemoveBrew {
 	brew remove --force $(brew list)
 	brew cleanup
-	echo "\033[36m>>All available packages installed via Brew were removed..\033[0m"
+	echo "\033[36m>>All available packages installed via Homebrew are being removed..\033[0m"
 	which brew && ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
 		echo "\033[36m>>Homebrew uninstalled from your system.\033[0m"
 
