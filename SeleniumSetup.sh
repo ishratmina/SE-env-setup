@@ -4,7 +4,7 @@
 #contributor: Sharif Rahman.
 #linkedin profile: https://www.linkedin.com/in/md-sharifur-rahman-855412120
 chmod +x SeleniumSetup.sh
-set -e
+set +e
 
 function InstallPackages {
 		#updating brew (platform independent)
@@ -103,13 +103,13 @@ if [ "$conf" == "yes" ] || [ "$conf" == "y" ]; then
 			sudo shutdown -r now
 		else
 			echo "\033[36mSystem reboot recommended for functionalities of newly installed components.\nEnjoy Selenium Automation :)\033[0m"
-			exit 0
+			exit 1
 		fi
 
 	else 
 		sleep 1
 		echo "\033[32m\nExiting Process.. \nRun this script only to install/upgrade Selenium Dev environment or cleanup.\033[0m"
-		exit 0
+		exit 1
 	fi
 else
 	sleep 1
@@ -118,5 +118,5 @@ else
 	echo "________________________________________________________________"
 	echo "\033[33mIF YOU CAN SEE JAVA VERSION ABOVE, YOU ALREADY HAVE JAVA INSTALLED. \nRE-RUN THE SCRIPT USING [y/yes] WHEN PROMPTED..\033[0m"
 	echo "\nJDK is a pre-requisite. You can get the latest JDK from: \nhttp://www.oracle.com/technetwork/java/javase/downloads/index.html"
-	exit 0
+	exit 1
 fi
